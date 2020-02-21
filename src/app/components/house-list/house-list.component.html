@@ -1,0 +1,19 @@
+<div fxLayout="column">
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{listTitle}}</mat-card-title>
+            <mat-card-subtitle>{{listDescription}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-nav-list>
+                <mat-list-item *ngFor="let house of houseList">
+                    <mat-icon mat-list-icon>home</mat-icon>
+                    <h4 mat-line>{{house.street}}</h4>
+                    <!-- <p mat-line> {{folder.updated | date}} </p> -->
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-card-content>
+    </mat-card>
+</div>

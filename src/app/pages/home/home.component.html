@@ -1,0 +1,14 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-evenly">
+    <div fxLayout="column" fxFlex="30%">
+        <app-house-list [houseListType]="'shortestDistance'" [listTitle]="'Closest houses'"
+            [listDescription]="'List of Houses ordered in ascending distance to the Sister\'s house'"></app-house-list>
+    </div>
+    <div fxLayout="column" fxFlex="30%">
+        <app-house-list [houseListType]="'moreThanFiveRooms' " [listTitle]="'Five room houses'"
+            [listDescription]="'This list cntains the Houses that have more than 5 rooms'"></app-house-list>
+    </div>
+    <div fxLayout="column" fxFlex="30%">
+        <app-house-list [houseListType]="'incompleteInfo'" [listTitle]="'Incomplete Houses'"
+            [listDescription]="'List of Houses that have more missing info'"></app-house-list>
+    </div>
+</div>
